@@ -76,5 +76,4 @@
 ## Contact
 
 - GitHub: [@koody526](https://github.com/koody526)
-- Email / itch.io: 공개 범위 확인 후 추가
 
