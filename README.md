@@ -1,79 +1,37 @@
-# 구대연 | Game QA Portfolio
+# 구대연 | 개발 포트폴리오
 
-게임의 규칙과 사용자 흐름을 이해하고, 재현 가능한 문서로 품질 문제를 설명하는 **Game QA / Software QA 지원자**입니다. 직접 개발한 게임과 웹 프로젝트를 테스트 대상으로 삼아 기능 구현, 오류 분석, 회귀 테스트 과정을 함께 기록하고 있습니다.
+게임·IT 개발 프로젝트와 학습 경험을 정리합니다. 팀 프로젝트에서는 팀 산출물과 개인 수행을 구분하고, AI 도움을 활용한 작업은 해당 사실을 함께 설명합니다.
 
-> 현재 핵심 프로젝트의 원본 코드와 결과 화면을 정리 중입니다. 검증된 자료부터 순차적으로 연결합니다.
+## ONE-TAP
 
-## Featured Work
+타키온을 레퍼런스로 기획한 4인 팀 Unity 게임입니다. 게임 개발과 itch.io Windows 버전 공개를 진행했고, 본인 회차 KPI 보고서 작성·발표와 14개 대학 대상 홍보를 수행했습니다. 개발 전반에서 AI를 활용했습니다.
 
-### ONE-TAP — Unity One-Touch Avoidance Game
+- 원본에서 확인한 기술: Unity, C#, Firebase
+- 원본 에디터: Unity 6000.2.6f1
+- 배포: [itch.io Windows 버전](https://koody526.itch.io/one-tap)
+- 기능: 플레이어 이동, 장애물, 점수·일시정지, Firebase 연동 구성
+- 소스 공개: 팀 공유 범위와 에셋 이용조건 확인 후 결정
 
-한 번의 입력으로 위험을 피하는 Unity 기반 게임입니다. 게임플레이 구현뿐 아니라 WebGL 전환과 Firebase 랭킹 연동 과정에서 발생한 문제를 QA 사례로 정리합니다.
+### KPI 보고
 
-- 개인 담당: 사용자 확인·증빙 연결 중
-- 기술: 원본에서 확인: Unity·C#·Firebase / WebGL 빌드·공개: 미확인
-- QA 관점: 플랫폼 차이, 랭킹 저장/조회, 초기화 순서, 네트워크 실패, 회귀 테스트
-- 상태: 저장소·실행 링크·증거 자료 정리 중
+2025-11-06~12(7일)과 11-13~18(6일)의 일평균 DAU는 약 4.43명과 11.33명입니다. 평균의 비율은 약 2.56배입니다. 팀 게임의 일평균 DAU를 비교한 값입니다.
 
-### Game QA Case Study
+## Pygame Snake
 
-버그 리포트와 테스트 케이스를 재현 절차, Expected/Actual, Severity/Priority, Evidence, 원인 추정, Regression Test 형식으로 기록합니다.
+AI 도움을 활용한 개인 게임 실습입니다. 이동·벽/자기 충돌·방향 입력 제한·먹이 재배치·WIN 상태를 구현한 소스를 보유하고 있습니다. 공개용 파일과 이미지 출처를 정리 중입니다.
 
-- 첫 사례: ONE-TAP WebGL/Firebase 랭킹 이슈
-- 포함 예정: 상태 전이, 입력 경계값, 저장/복구, 플랫폼 호환성 테스트
-- 저장소: [game-qa-case-study](https://github.com/koody526/game-qa-case-study)
+## NEON SYNC
 
-### NEON SYNC — Vanilla JS Smart Vending Machine
+HTML/CSS/JavaScript로 만든 자판기 화면 실습입니다. 잔액·재고·품절과 색상 패턴 입력에 따른 구매 조건을 다룹니다. 실제 결제·서버 인증 시스템은 아닙니다. 개인 작성 범위와 이미지 출처를 정리 중입니다.
 
-재고와 사용자 조건에 따라 구매 가능 상태가 달라지는 스마트 자판기입니다.
+## 화해법정
 
-- 주요 기능: 재고 관리, 품절 처리, 인증 미니게임, 고카페인 제품 잠금, 입력 예외 처리
-- 기술: HTML, CSS, Vanilla JavaScript
-- QA 관점: 재고 경계값, 상태 동기화, 잠금 해제 조건, 연속/잘못된 입력
-- 상태: 원본 코드와 배포 링크 확인 중
+갈등 조정 서비스의 사용자 흐름과 백엔드 구성안을 공동 조사·설계하고 문서화한 팀 프로젝트입니다. 설계 경험으로 소개하며 실제 백엔드 구축·운영 실적으로 표현하지 않습니다.
 
-### Pygame Snake — Object-Oriented Game
+## 학습과 점검 기록
 
-객체지향 구조로 만든 Snake 게임입니다. 충돌과 방향 입력처럼 작은 규칙 차이가 플레이 결과에 미치는 영향을 테스트합니다.
+- [University Coursework](https://github.com/koody526/university-coursework): 대표 프로그래밍 실습의 선별 이관 준비
+- [Game QA Case Study](https://github.com/koody526/game-qa-case-study): 테스트 문서 템플릿과 검증 전 설계 초안. 테스트 설계 연습으로 정리
 
-- 주요 기능: 이동, 충돌 처리, 반대 방향 입력 제한, Apple 재배치 fallback, WIN 상태
-- 기술: Python, Pygame
-- QA 관점: 벽/자기 충돌, 빠른 연속 입력, 보드 포화, 승리 조건
-- 상태: 원본 코드와 실행 화면 확인 중
-
-## Additional Projects & Activities
-
-| 프로젝트 | 초점 | 공개 방식 |
-|---|---|---|
-| Gemini HCI 재설계 | 사용성 분석과 인터페이스 개선 | 분석 근거·전후 비교 중심 사례 |
-| CampusLedger | 사회혁신, AI·블록체인 아이디어 | 기획·검증·역할 중심 사례 |
-| 학과 홍보영상 캡스톤 | 협업, 제작, 결과물 관리 | 저작권 확인 후 영상/과정 공개 |
-| University Coursework | C 및 프로그래밍 기초 | 핵심 실습만 선별 통합 |
-
-## QA Artifacts
-
-제가 작성하는 QA 문서는 다음 질문에 답하도록 구성합니다.
-
-1. 어떤 환경에서 어떤 절차로 다시 발생하는가?
-2. 기대 결과와 실제 결과의 차이는 무엇인가?
-3. 사용자와 서비스에 미치는 영향은 어느 정도인가?
-4. 원인 가설을 어떤 증거로 좁혔는가?
-5. 수정 뒤 무엇을 다시 확인해야 하는가?
-
-## Skills
-
-- Testing: Bug Reporting, Test Case Design, Exploratory Testing, Regression Testing
-- Game/Web: Unity, C#, WebGL, Firebase, Vanilla JavaScript
-- Programming: Python, Pygame, C
-- Collaboration: Git, GitHub, 문서화
-
-## Coursework Repositories
-
-- [university-coursework](https://github.com/koody526/university-coursework) — 대표 수업 실습을 선별해 통합하는 저장소
-- [25MultiProgramming1](https://github.com/koody526/25MultiProgramming1) — C 및 Notebook 수업 실습; 통합 정리 예정
-- [25AI_C2](https://github.com/koody526/25AI_C2) — C 콘솔 애니메이션·포인터 실습; 통합 정리 예정
-
-## Contact
-
-- GitHub: [@koody526](https://github.com/koody526)
+기존 수업 저장소는 대표 소스·실행 안내를 선별 중입니다. 새 프로젝트 저장소는 공개 이후 실제 주소를 연결합니다.
 
